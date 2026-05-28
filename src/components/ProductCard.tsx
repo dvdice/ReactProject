@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../logo.svg';
 import '../styles/ProductCard.scss';
 
-const ProductCard = (props: any) => {
+const ProductCard = ({product}: any) => {
     return (
         <div className="ProductCard">
             <div className="ProductCard__image-wrapper">
@@ -10,9 +10,9 @@ const ProductCard = (props: any) => {
             </div>
 
             <div className="ProductCard__info">
-                <h2 className="ProductCard__info__title">{props.title}</h2>
-                <div className="ProductCard__info__description">{props.description}</div>
-                <div className="ProductCard__info__price">{props.price}</div>
+                <h2 className="ProductCard__info__title">{product.title}</h2>
+                <div className="ProductCard__info__description">{product.description}</div>
+                <div className="ProductCard__info__price">${product.price}</div>
             </div>
         </div>
     );
