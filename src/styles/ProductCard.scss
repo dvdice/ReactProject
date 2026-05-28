@@ -1,0 +1,33 @@
+.ProductCard {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 33vw;
+    height: 10vw;
+    gap: 10px;
+
+    &__image {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+        display: block;
+
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 20%;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        &__price {
+            color: #4ab52b;
+        }
+    }
+}
